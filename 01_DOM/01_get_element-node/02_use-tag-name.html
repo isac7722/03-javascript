@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>02. 태그 이름을 이용한 요소 노드 획득</h1>
+    <p>
+        Document.prototype/Element.prototype.getElementByTagName ("태그") 메서드는 인수로 전달한 
+        태그 이름을 갖는 모든 요소 노드를 탐색하요 반환한다. 
+        메서드 이름의 Elements가 복수형인 것에서 알 수 있듯이
+        여러 개의 요소 노드 객체를 갖는 dom 컬렉션 객체인 htmlCollection 객체를 반환한다
+    </p>
+    <ul id="food">
+        <li>burger</li>
+        <li>rice</li>
+        <li>ham</li>
+    </ul>
+
+    <ul id="drink">
+        <li>water</li>
+        <li class="li">cola</li>
+        <li class="li">sprite</li>
+    </ul>
+    
+    <ul id="animal">
+        <li>lion</li>
+        <li>tiger</li>
+        <li>lamb</li>
+        <li>giraffe</li>
+    </ul>
+
+    <script>
+        const $lists = document.getElementsByTagName("li");
+        $lists[4].innerText="red bull";
+        $lists[4].style.color="aqua";
+        console.log($lists[0]);
+
+        let changeColor = 0;
+        for(let i =0; i <$lists.length; i++){
+            //6
+            $lists[i].style.backgroundColor= "rgb(130,220," + changeColor + ")";
+            changeColor += 40;
+
+        }
+        console.log($lists);
+
+        [...$lists].forEach(list =>list.style.color = "blue");
+
+        const $drink = document.getElementById("drink");
+        console.log($drink);
+        const $listsFormDrink = $drink.getElementsByClassName("li");
+        console.log($listsFormDrink);
+
+        [...$listsFormDrink].forEach(list => list.style.color="red");
+
+        const $animal = docu
+
+
+    </script>
+</body>
+</html>
