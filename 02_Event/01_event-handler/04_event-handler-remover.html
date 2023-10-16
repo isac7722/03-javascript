@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>04. 이벤트 핸들러 제거</h1>
+    <pre>
+        EventTarget.prototype.removeEventListener 메서드를 통해 addEventL, hanisterner 메서드로
+        등록한 이벤트 핸들러를 제거한다.
+        removeEvenetListener 메서드에 전달할 인수는 addEvenetListener 메서드와 동일하며, 
+        전달한 인수가 일치하지 않을 경우 이벤트 핸들러는 제거되지 않는다.
+    </pre>
+
+    <button id="btn">클릭해보세요</button>
+
+    <script>
+        const $button = document.getElementById("btn");
+        const handleClick = () => afterEventListener('clikck'm handleClick);
+
+        $button.addEventListener("click", handleClick);
+        $butonn.addEventListener("mouerover", ( =>alert("마우스 올림"));)
+    </script>
+
+
+    <pre>  
+
+    
+    
+    </pre>
+
+    <button id="btn2">클릭하기</button>
+    <script>
+        const $button2 = document.getElementById("btn");
+        const handleOnClick = () => ("더블클릭");
+
+        $button2.onblclick = handleClick;
+
+        $button2.removeEventListener('dbclick',handleOnClick);
+
+        $button2.onblclick = null;
+)
+    </script>
+
+
+</html>
