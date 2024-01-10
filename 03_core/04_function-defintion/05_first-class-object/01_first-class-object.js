@@ -24,6 +24,7 @@ for(var i = 0; i < count; i++) {
     }
 } 
 
+
 var returnFunc = repeat(obj.hello, 5);
 returnFunc();
 

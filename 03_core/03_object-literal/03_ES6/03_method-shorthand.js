@@ -24,3 +24,13 @@ dog2.eat('고구마');
 const name = function(){
     
 }
+
+
+var dinosaur = {
+    name: "T-Rex",
+    hunt: function(prey){
+        console.log(`${dinosaur.name}은 ${prey}를 사냥합니다`)
+    }
+}
+
+dinosaur.hunt("기유");

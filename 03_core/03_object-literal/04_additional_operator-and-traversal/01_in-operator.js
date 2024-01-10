@@ -22,3 +22,18 @@ console.log("height" in student);               // false - 존재하지 않음
 console.log("test" in student);                 // true - 존재
 
 
+let categories = {
+    option1 : "자동차",
+    option2 : "기차",
+    option3 : "비행기"
+}
+
+if ("자장가" in categories){
+    console.log(`자장가라는 category가 있다`)
+}
+if("option3" in categories){
+    console.log(`first option is ${categories.option1}라는 category가 있습니다.`)
+}
+
+
+

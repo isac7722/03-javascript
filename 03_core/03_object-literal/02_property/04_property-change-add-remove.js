@@ -24,3 +24,15 @@ delete dog.age;
 delete dog.something;
 // delete dog['something'];
 console.log(dog);
+
+var human = {
+    name : "Tom",
+    age : 20
+}
+
+console.log(human)
+
+delete human.age;
+
+console.log(human)
+

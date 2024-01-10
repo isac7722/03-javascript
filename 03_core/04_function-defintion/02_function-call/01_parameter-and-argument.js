@@ -52,3 +52,9 @@ console.log(result);
 하지만 이상적인 함수는 한 가지 일만 해야 하며 가급적 작게 만들어야 하므로 
 최대 3개 이상을 넘지 않는 것을 권장한다.
 */
+
+
+
+lexical environment ={
+    a = b
+}

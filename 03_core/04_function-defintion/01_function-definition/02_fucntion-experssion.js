@@ -21,3 +21,10 @@ console.log(calc(10, 20));
 // 함수명으로 호출은 불가능하다.
 // ReferenceError: add is not defined
 // console.log(add(10, 20));
+
+
+var statement = function sentence(hunter, prey){
+    return `${hunter}가 지금 ${prey}를 사냥하고 있습니다.`
+}
+
+console.log(statement("몽골인","유럽인"))
