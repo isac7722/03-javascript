@@ -54,7 +54,3 @@ console.log(result);
 */
 
 
-
-lexical environment ={
-    a = b
-}
